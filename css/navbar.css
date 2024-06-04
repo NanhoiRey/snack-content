@@ -40,16 +40,19 @@
     font-weight: 400;
 
     color: #fff;
-    transition: ease-in-out 0.5s;
+    transition: ease-in-out 0.3s;
     backdrop-filter: blur(50px);
     border-radius: 10px;
+    padding: 0.5rem;
 
 
 
 }
 
 .nav-link:hover {
-    color: #482ff7;
+    color: #ffffff;
+    background-color: #d4d4d476;
+
 }
 
 
@@ -70,17 +73,21 @@
   }
   
   .icon-bar a {
+
     display: block;
     text-align: center;
     padding: 10px;
-    transition: all 0.3s ease;
-    color: white;
+    transition: all 0.5s ease-in-out;
+    color: rgb(192, 192, 192);
     font-size: 20px;
+    border-radius: 10px;
+
     
   }
   
   .icon-bar a:hover {
-    background-color: #000;
+    background-color: #0000003c;
+    color: rgb(255, 255, 255);
   }
   
 

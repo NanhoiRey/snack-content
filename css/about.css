@@ -21,6 +21,7 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .about-left, .about-right{
     display: flex;
@@ -52,4 +53,30 @@
     width: 100%;
     position: relative;
     z-index: 1;
+}
+
+
+.about-team{
+    display: flex;
+    
+}
+.about-team img{
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.team-card{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+    margin-top: 1rem;
+    transition: ease-in-out 0.2s;
+
+}
+.team-card:hover{
+    transform: translateY(-4px);
+
+
 }
