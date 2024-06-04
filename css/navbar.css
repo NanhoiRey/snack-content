@@ -12,6 +12,7 @@
 
 .hamburger {
     display: none;
+    z-index: 3000;
 }
 
 .bar {
@@ -61,11 +62,33 @@
 
 }
 
+.icon-bar {
+    display: flex;
+    margin-left: 2rem;
+    padding: 0;
+
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+  
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 4rem;
+        top: 0rem;
         padding-bottom: 4rem;
         flex-direction: column;
         backdrop-filter: blur(140px);
@@ -74,12 +97,12 @@
         height: 100vh;
         text-align: center;
         transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 1000;
+    
     }
     .navbar {
         padding: 1rem 3rem;
-        background-color: #010101a8;
         
     }
 
@@ -116,6 +139,11 @@
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+    .icon-bar {
+        display: flex;
+        margin-left:0px;
+        margin-top: 3rem;
     }
 
 }
